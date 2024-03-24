@@ -1,7 +1,13 @@
-body {
-    background-color: red;
-}
-
 h1 {
-    color: blue;
+  background-color: #ff0000;
+}
+h2 {
+  background-color: #0000ff;
+}
+h3 {
+  background-color: #00ff00;
+}
+em {
+  background-color: #0000ff;
+  color: #ffffff;
 }
