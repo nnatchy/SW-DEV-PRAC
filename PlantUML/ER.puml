@@ -1,0 +1,28 @@
+@startuml
+skinparam linetype ortho
+
+entity "Entity01" as e01 {
+    *e1_id : number <<generated>>
+    --
+    *name: text
+    description: text
+}
+
+entity "Entity02" as e02 {
+    *e2_id : number <<generated>> // PK
+    --
+    *e1_id: number <<FK>>
+    other_details: text
+}
+
+entity "Entity03" as e03 {
+    *e3_id : number <<generated>> // PK
+    --
+    *e1_id: number <<FK>>
+    other_details: text
+}
+
+e01 ||..|{ e02
+e01 |o..|{ e03
+
+@enduml
