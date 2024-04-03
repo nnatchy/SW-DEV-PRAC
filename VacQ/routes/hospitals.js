@@ -143,9 +143,16 @@ const { protect, authorize } = require('../middleware/auth');
 *           type: string
 *         required: true
 *         description: The hospital id
+*     requestBody:
+*       required: true
+*       content:
+*         application/json:
+*           schema:
+*             $ref: '#/components/schemas/Hospital'
 *     responses:
 *       200:
-*         contents:
+*         description: The hospital was updated
+*         content:
 *           application/json:
 *             schema:
 *               $ref: '#/components/schemas/Hospital'
