@@ -178,10 +178,6 @@ const { protect, authorize } = require('../middleware/auth');
 *     responses:
 *       200:
 *         description: The hospital was deleted
-*         contents:
-*           application/json:
-*             schema:
-*               $ref: '#/components/schemas/Hospital'
 *       404:
 *         description: The hospital was not found
 */
